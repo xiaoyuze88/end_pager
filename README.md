@@ -1,35 +1,3 @@
-
-by Xiaoyuze ( xiaoyuze.com ) 
-xiaoyuze88@gmail.com
-=========
-
-
-
-Example:
-
-var htmlObject = end_pager({
-		data : json_data,
-		per_page : 20,
-		page : 1,
-		pre_url : url_prefix
-		gap : 4
-	});
-
-	@param 
-		data : json type object,
-		per_page : articles showed per page,default to 20,
-		page : current page,default to 1,
-		pre_url : prefix of url , e.g : pre_url = "http://xiaoyuze.com/index.php?",
-				  then it'll append parameters like page=xx to the url,xx means the current page number.
-				  Default to be "#!"
-		gap : controls the numbers of the pager buttons,default to 4.
-	@return 
-		output = {
-			pager : html code of the pager,you can append it directly to your pager container.
-			content : content html code, default to using EJS to render,
-					  you need to set your own path to your template inside the function filtContent();
-		}
-*/
 # end_pager.js #
 
 This is a simple plugins to make it possible to divide pages in a static html page that received data from ajax api only.
