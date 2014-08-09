@@ -2,6 +2,10 @@
 
 This is a simple plugins to make it possible to divide pages in a static html page that received data from ajax api only.
 
+## DEMO ##
+
+http://xiaoyuze.com/demo/end_pager
+
 ## Quick Start ##
 
 1. Import pager.css to your html, or set your own style yourself.
@@ -9,7 +13,8 @@ This is a simple plugins to make it possible to divide pages in a static html pa
 
 ```javascript
 /*
-	In our demo, we used
+	Our end_pager.js don't need any library, in our demo we used jQuery for convenience.
+	But hashchange.min.js need jQuery, or you can use your own plugin to fix the hashchange event in older browser.
 */
 var _data;
 if(!_data){
