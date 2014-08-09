@@ -78,9 +78,9 @@ config_object = {
 
 ```javascript
 output = {
-			pager : html code of the pager,you can append it directly to your pager container.
-			content : content html code, default to using EJS to render,
-					  you need to set your own path to your template inside the function filtContent();
+			pager : Html code of the pager,you can append it directly to your pager container,a `UL` tag is recommended.
+			content : Content html code, rendered by EJS, or you can set your own template yourself.
+					  Besides, you need to set your own path to your template inside the function filtContent() in the file end_pager.js;
 		}
 ```
 
