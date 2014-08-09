@@ -8,7 +8,9 @@ This is a simple plugins to make it possible to divide pages in a static html pa
 2. Import end_pager.js to your html, if you need to support IE7-, import the hashchange.min.js too.
 
 ```javascript
-
+/*
+	In our demo, we used
+*/
 var _data;
 if(!_data){
 	// accept data from jsonp api
