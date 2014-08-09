@@ -8,29 +8,32 @@ This is a simple plugins to make it possible to divide pages in a static html pa
 
 var _data;
 if(!_data){
+	// accept data from jsonp api
 	$.ajax({
 		url : 'your data api url here',
 		dataType : 'jsonp',
 		jsonpCallback: '__data_callback',
 		success : function(data,status) {
-			_data = turnArray(data.data);
-			update();
+			_data = data.data;	
+			update();	//rendering data
 		}
 	});
 
-$(window).on("hashchange",update);
+$(window).on("hashchange",update);	//detect hash change
 
 function update() {
-
+	
+	// using our end_pager here
 	var view = end_pager({
-		data : _data,
-		per_page : 3,
-		page : getPage()
-	})
-	$(".pager-list").html(view['pager']);
-	$("#comment_list").html(view['content']);
+		data : _data,			//data
+		per_page : 3,			//show 3 articles per page
+		page : getPage() 		//set the current page
+	});
+	$(".pager-list").html(view['pager']); 			//Our end_pager return the html code, set them to where you 												//need to show them. For this case , $('.pager-list') is 													//our articles container.
+	$("#comment_list").html(view['content']);		// $("#comment_list") is our pager buttons' container.
 }
 
+// You can also decide how to get the hash code from url yourself
 function getPage() {
 	var hash = window.location.hash;
 
@@ -90,7 +93,7 @@ function filtContent() {
 	}
 ```
 
-Besides , if you need to support low versions of IE, like IE 6 and IE7, you might need to plus those code below in your html.
+Besides , if you need to support low versions of IE, like IE 6 and IE7, you might need to plus those code below in your html because they don't support `window.hashchange` event.
 ```javascript
 <!--[if lte IE 7]>
 	<script type="text/javascript" src="js/hashchange.js"></script>
