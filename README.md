@@ -1,6 +1,6 @@
 # end_pager.js #
 
-This is a simple plugins to make it possible to divide pages in a static html page that received data from ajax api only.
+This is a simple plugins to make it possible to divide pages in a static html page that received data from ajax/jsonp api only.
 
 ## DEMO ##
 
