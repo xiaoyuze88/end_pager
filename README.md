@@ -14,7 +14,7 @@ http://xiaoyuze.com/demo/end_pager
 ```javascript
 /*
 	Our end_pager.js don't need any library, in our demo we used jQuery for convenience.
-	But hashchange.min.js need jQuery, or you can use your own plugin to fix the hashchange event in older browser.
+	But hashchange.min.js need jQuery, or you can use your own plugin to fix the hashchange issue in older browser.
 */
 var _data;
 if(!_data){
