@@ -1,0 +1,57 @@
+.end-pager {
+    /*width: 100%;*/
+    margin-top: 51px;
+    margin-bottom: 74px;
+    text-align: center;
+}
+.end-pager .end-pager-list {
+    display: inline-block;
+    *display: inline;
+    *zoom:1;
+}
+.end-pager .end-pager-inline {
+    display: inline-block;
+    *float: left;
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    background-color: #32c2e2;
+    margin-right: 5px;
+}
+.end-pager .end-pager-inline.end-pager-inline-btn {
+    width: 67px;
+}
+.end-pager .end-pager-inline .end-pager-link {
+    color: #fff;
+    display: inline-block;
+    *display: :inline;
+    *zoom:1;
+    line-height: 16px;
+    height: 16px;
+    padding: 12px 0;
+    width: 100%;
+}
+.end-pager .end-pager-inline.unactive {
+    background-color: #e6e6e6;
+    cursor: default;
+}
+.end-pager .end-pager-inline:hover ,
+.end-pager .end-pager-inline.active,
+.end-pager .end-pager-inline:active {
+    background-color: #ffc519;
+}
+.end-pager .end-pager-inline.unactive:hover {
+	background-color: #e6e6e6;
+}
+.end-pager .end-pager-inline.unactive:hover .end-pager-link{
+	cursor: default;
+}
+.end-pager .end-pager-inline.dot {
+    
+}
+.end-pager .end-pager-inline.dot .end-pager-link {
+	/*cursor: default;*/
+}
+.end-pager .end-pager-inline.dot:hover {
+	background-color: #32c2e2;
+}
