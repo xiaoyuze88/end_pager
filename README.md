@@ -34,8 +34,10 @@ function update() {
 		per_page : 3,			//show 3 articles per page
 		page : getPage() 		//set the current page
 	});
-	$(".pager-list").html(view['pager']); 			//Our end_pager return the html code, set them to where you 												//need to show them. For this case , $('.pager-list') is 													//our articles container.
-	$("#comment_list").html(view['content']);		// $("#comment_list") is our pager buttons' container.
+	//Our end_pager return the html code, set them to where you need to show them. In this case , $('.pager-list') is our articles container.
+	$(".pager-list").html(view['pager']);
+	// $("#comment_list") is our pager buttons' container.	
+	$("#comment_list").html(view['content']);		
 }
 
 // You can also decide how to get the hash code from url yourself
