@@ -4,6 +4,9 @@ This is a simple plugins to make it possible to divide pages in a static html pa
 
 ## Quick Start ##
 
+1. Import pager.css to your html, or set your own style yourself.
+2. Import end_pager.js to your html, if you need to support IE7-, import the hashchange.min.js too.
+
 ```javascript
 
 var _data;
@@ -74,7 +77,7 @@ output = {
 
 ## More ##
 
-Our default template is EJS, if your are using ejs, you need to set your own path to your template file inside the function filtContent.
+Our default template is EJS, if your are using ejs, you need to set your own path to your template file inside the function filtContent in end_pager.js.
 
 Like : 
 ```javascript
