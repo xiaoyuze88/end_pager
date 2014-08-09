@@ -11,6 +11,8 @@ var _data;
 // 			}
 // 		});
 // }
+
+// Fake data
 _data = [
 {
 "baidu_id":"可可草莓布丁  ",
@@ -79,8 +81,6 @@ function success(data) {
 			per_page : 3,
 			page : getPage()
 		})
-		// _data.update();
-		// console.log(view);
 		$(".pager-list").html(view['pager']);
 		$("#comment_list").html(view['content']);
 	}
